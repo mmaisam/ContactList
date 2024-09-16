@@ -16,7 +16,10 @@ public class AddressBook {
         BuddyInfo buddy = new BuddyInfo("Tarek","24 Carleton Drive, Ottawa", "222-000-2456");
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
+        System.out.println(addressBook.buddies.isEmpty());
         addressBook.removeBuddy(buddy);
-        //dhjsdgdksgdkscghksdh
+        System.out.println(addressBook.buddies.isEmpty());
+        System.out.println(buddy.getName());
+
     }
 }
