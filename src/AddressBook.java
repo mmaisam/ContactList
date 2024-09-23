@@ -5,11 +5,15 @@ public class AddressBook {
     AddressBook(){
         buddies = new ArrayDeque<>();
     }
-    public void addBuddy(BuddyInfo buddy){
-        buddies.add(buddy); // Adds buddy to the end
+    public void addBuddy(BuddyInfo buddy) {
+        if (buddy != null) {
+            buddies.add(buddy); // Adds buddy to the end
+        }
     }
     public void removeBuddy(BuddyInfo buddy){
-        buddies.remove(buddy); // Removes specific buddy
+        if (buddy != null) { //check if needed
+            buddies.remove(buddy); // Removes specific buddy
+        }
     }
     public static void main(String[] args) {
         System.out.println("Address Book");
